@@ -1,7 +1,7 @@
 
 class TicketCounter {
     private int seats = 10;
-
+//
     public synchronized void bookTicket(String user, int numSeats) {
         if (seats >= numSeats) {
             System.out.println(user + " booked " + numSeats + " seats.");
@@ -39,3 +39,4 @@ public class Multithreadedticketbooking {
         new UserThread(counter, "User C", 2).start();
     }
 }
+
